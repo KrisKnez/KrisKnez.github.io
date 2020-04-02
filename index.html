@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello world!</title>
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-    </body>
+  <head>
+    <title>Hello world!</title>
+    <link href="https://vjs.zencdn.net/7.7.5/video-js.css" rel="stylesheet" />
+    <!-- <link href="/videojs-sublime-skin.min.css" rel="stylesheet" /> -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hello world!</h1>
+    <video
+      id="my-video"
+      class="video-js vjs-theme-forest"
+      controls
+      preload="auto"
+      width="1280"
+      height="720"
+      poster="MY_VIDEO_POSTER.jpg"
+      data-setup="{}"
+    >
+      <source src="VideoTest.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <script src="https://vjs.zencdn.net/7.7.5/video.js"></script>
+  </body>
 </html>
